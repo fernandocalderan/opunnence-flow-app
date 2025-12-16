@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Opunnence Flow IA · Demo interactiva</title>
+  <meta name="description" content="Simula cómo Flow IA conversa, puntúa y automatiza sin intervención humana." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">F</div>
+        <div class="brand-text">
+          <span>Opunnence</span>
+          <strong>Flow IA</strong>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span class="live-pill">Demo guiada</span>
+        <a class="ghost-link" href="mailto:contacto@opunnence.com">Hablar con un experto</a>
+        <a class="cta-link" href="mailto:contacto@opunnence.com">Solicitar acceso</a>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="phase phase-select active" id="phase-select">
+        <div class="copy">
+          <p class="eyebrow">Implementación inmediata</p>
+          <h1>Simula cómo Flow IA vendería por tu negocio</h1>
+          <p class="lede">Flow IA conversa, puntúa y ejecuta en tiempo real. Elige tu vertical y mira cómo responde, prioriza y automatiza sin intervención humana.</p>
+        </div>
+
+        <div class="business-grid">
+          <button class="business-card" data-type="inmobiliaria">
+            <span class="chip">Alto valor</span>
+            <h3>Inmobiliaria</h3>
+            <p>Convierte interesados en visitas confirmadas y compradores con financiación lista.</p>
+          </button>
+          <button class="business-card" data-type="restaurante">
+            <span class="chip">Reservas</span>
+            <h3>Restaurante</h3>
+            <p>Dirige reservas a horarios rentables y llena mesas sin llamadas manuales.</p>
+          </button>
+          <button class="business-card" data-type="servicios">
+            <span class="chip">B2B</span>
+            <h3>Servicios profesionales</h3>
+            <p>Clasifica leads, agenda reuniones y envía propuesta base en automático.</p>
+          </button>
+          <button class="business-card" data-type="ecommerce">
+            <span class="chip">Online</span>
+            <h3>Ecommerce</h3>
+            <p>Recupera carritos, prioriza clientes de alto ticket y activa campañas reactivas.</p>
+          </button>
+        </div>
+        <div class="helper">Flow IA adapta tono, preguntas y scoring según cada vertical.</div>
+      </section>
+
+      <section class="phase phase-chat hidden" id="phase-chat">
+        <div class="columns">
+          <div class="card chat-panel">
+            <div class="chat-header">
+              <div>
+                <p class="eyebrow">Flow IA activo</p>
+                <h3 id="business-label">Inmobiliaria</h3>
+              </div>
+              <span class="status live">Conversación en curso</span>
+            </div>
+
+            <div class="chat-timeline" id="chat-timeline">
+              <div class="system-note">Flow IA replica tu tono comercial y mantiene la conversación en la web.</div>
+            </div>
+
+            <div class="quick-replies">
+              <div class="quick-header">
+                <p>Respuestas rápidas del usuario</p>
+                <span class="microcopy">Simula clics reales sin teclear.</span>
+              </div>
+              <div class="quick-buttons">
+                <button class="quick-reply" data-message="Quiero información">Quiero información</button>
+                <button class="quick-reply" data-message="Precio">Precio</button>
+                <button class="quick-reply" data-message="Hablar con alguien">Hablar con alguien</button>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card score-panel">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Panel Flow IA</p>
+                <h3>Lead scoring en tiempo real</h3>
+              </div>
+              <span class="microcopy">Flow IA analiza intención y prioriza automáticamente</span>
+            </div>
+
+            <div class="score-meter">
+              <div class="score-main">
+                <img src="assets/icon-score.svg" alt="Score" />
+                <div>
+                  <p class="label">Lead Score</p>
+                  <div class="score-number" id="score-number">42</div>
+                </div>
+              </div>
+              <div class="score-bar">
+                <div id="score-bar-fill"></div>
+              </div>
+            </div>
+
+            <div class="metrics-grid">
+              <div class="metric">
+                <p class="label">Intención</p>
+                <strong id="intent-value">Media</strong>
+              </div>
+              <div class="metric">
+                <p class="label">Presupuesto</p>
+                <strong id="budget-value">€€</strong>
+              </div>
+              <div class="metric">
+                <p class="label">Urgencia</p>
+                <strong id="urgency-value">Media</strong>
+              </div>
+              <div class="metric status-metric">
+                <p class="label">Estado</p>
+                <span class="status" id="status-pill">No cualificado</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="phase phase-automation hidden" id="phase-automation">
+        <div class="card automation-card">
+          <div>
+            <p class="eyebrow">Automatización</p>
+            <h3>Flow IA ejecuta automáticamente</h3>
+            <p class="lede">Checklist en vivo. No hay intervención humana: Flow IA pasa del chat a la acción.</p>
+          </div>
+          <ul class="checklist" id="automation-list">
+            <li data-check>Lead guardado</li>
+            <li data-check>Lead cualificado</li>
+            <li data-check>Cita agendada</li>
+            <li data-check>Comercial notificado</li>
+          </ul>
+          <div class="automation-note" id="automation-note">Enviando acciones...</div>
+        </div>
+      </section>
+
+      <section class="phase phase-cta hidden" id="phase-cta">
+        <div class="card cta-card">
+          <p class="eyebrow">Activa Flow IA</p>
+          <h2>Esto es Flow IA funcionando.</h2>
+          <p class="lede">Actívalo en tu negocio en días, no meses.</p>
+          <div class="cta-actions">
+            <a class="cta-link" href="mailto:contacto@opunnence.com">Solicitar acceso</a>
+            <a class="ghost-link" href="mailto:contacto@opunnence.com">Hablar con un experto</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="demo.js"></script>
+</body>
+</html>
