@@ -145,7 +145,7 @@ function triggerClosing(flow) {
 function addUserMessage(text) {
   const msg = document.createElement('div');
   msg.className = 'message user';
-  msg.innerHTML = `<div>${text}</div><img class="avatar" src="assets/avatar-user.svg" alt="Usuario" />`;
+  msg.innerHTML = `<div>${text}</div><img class="avatar" src="/demo/assets/avatar-user.svg" alt="Usuario" />`;
   elements.timeline.appendChild(msg);
   elements.timeline.scrollTop = elements.timeline.scrollHeight;
 }
@@ -153,7 +153,7 @@ function addUserMessage(text) {
 function addFlowMessage(text, callback, delay) {
   const typing = document.createElement('div');
   typing.className = 'message flow';
-  typing.innerHTML = `<img class="avatar" src="assets/avatar-flow.svg" alt="Flow IA" /><div class="typing"><span></span><span></span><span></span></div>`;
+  typing.innerHTML = `<img class="avatar" src="/demo/assets/avatar-flow.svg" alt="Flow IA" /><div class="typing"><span></span><span></span><span></span></div>`;
   elements.timeline.appendChild(typing);
   elements.timeline.scrollTop = elements.timeline.scrollHeight;
   state.locked = true;
@@ -164,7 +164,7 @@ function addFlowMessage(text, callback, delay) {
     typing.remove();
     const msg = document.createElement('div');
     msg.className = 'message flow';
-    msg.innerHTML = `<img class="avatar" src="assets/avatar-flow.svg" alt="Flow IA" /><div>${text}</div>`;
+    msg.innerHTML = `<img class="avatar" src="/demo/assets/avatar-flow.svg" alt="Flow IA" /><div>${text}</div>`;
     elements.timeline.appendChild(msg);
     elements.timeline.scrollTop = elements.timeline.scrollHeight;
     bumpScore(4);
